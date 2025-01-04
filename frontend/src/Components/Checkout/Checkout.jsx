@@ -72,7 +72,7 @@ const Checkout = () => {
     };
   
     try {
-      const response = await fetch("https://ruhana.onrender.com/api/orders/checkout", {
+      const response = await fetch("https://aarshi.onrender.com/api/orders/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(order),

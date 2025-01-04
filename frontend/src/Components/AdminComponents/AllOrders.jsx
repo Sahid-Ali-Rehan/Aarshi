@@ -18,7 +18,7 @@ const AllOrders = () => {
             return;
           }
       
-          const response = await axios.get('https://ruhana.onrender.com/api/orders/all-orders', {
+          const response = await axios.get('https://aarshi.onrender.com/api/orders/all-orders', {
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -40,7 +40,7 @@ const AllOrders = () => {
   const updateStatus = async (orderId, status) => {
     try {
       const response = await axios.put(
-        `https://ruhana.onrender.com/api/orders/update-status/${orderId}`,
+        `https://aarshi.onrender.com/api/orders/update-status/${orderId}`,
         { status }
       );
       setOrders((prevOrders) =>
