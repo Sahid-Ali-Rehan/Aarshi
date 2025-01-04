@@ -100,7 +100,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="flex items-center space-x-2 order-last lg:order-none">
-          <img src="/Images/Logo.png" alt="Logo" className="w-12 h-12 object-contain" />
+          <img src="/Images/logo.png" alt="Logo" className="w-12 h-12 object-contain" />
         </div>
 
         {/* Desktop Menu */}
