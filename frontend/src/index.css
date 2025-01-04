@@ -2,7 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Apply default styles to the body */
 body {
-  @apply bg-[#F4EBB4] text-[#7d835f];
+  @apply bg-[#FFFFFF] text-[#7d835f];
   font-family: 'Inter', sans-serif;
+}
+
+/* Styling for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: #D4AF37; /* Gold color for premium look */
+}
+
+/* Links */
+a {
+  @apply text-[#D4AF37];
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  @apply text-[#D4AF38];
+}
+
+/* Buttons */
+/* button {
+  @apply bg-[#D4AF37] text-white py-2 px-4 rounded-lg shadow-md;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  @apply bg-[#BFA12C];
+  transform: scale(1.05);
+} */
+
+/* Default text inputs */
+input, textarea {
+  @apply border border-[#7d835f] rounded-md p-2 w-full text-[#2C2C2C];
+  font-family: 'Lato', sans-serif;
+  background-color: #FFFFF0; /* Ivory */
+}
+
+input:focus, textarea:focus {
+  @apply outline-none ring-2 ring-[#D4AF37];
+}
+
+/* Cards or content containers */
+.card {
+  @apply bg-[#FFFFF0] p-6 rounded-lg shadow-lg;
+  border: 1px solid #F7E7CE;
+}
+
+/* Footer or secondary text */
+.footer-text {
+  @apply text-[#6E7073] text-sm;
 }

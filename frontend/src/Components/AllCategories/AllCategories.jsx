@@ -13,20 +13,20 @@ const AllCategories = () => {
   return (
     <section
       className="py-16"
-      style={{ backgroundColor: "#faeed5" }} // Main background
+      style={{ backgroundColor: " #FFFFFF" }} // Main background
     >
       <div className="container mx-auto px-4">
         {/* Title Section */}
         <div className="text-center mb-12">
           <h2
             className="text-4xl font-extrabold mb-2"
-            style={{ color: "#8d5c51" }} // Main title color
+            style={{ color: " #D4AF37" }} // Main title color
           >
             Explore Categories
           </h2>
           <p
             className="text-lg"
-            style={{ color: "#7b7c4d" }} // Subtitle color
+            style={{ color: " #D2C385" }} // Subtitle color
           >
             Explore our Popular Categories
           </p>
@@ -39,27 +39,27 @@ const AllCategories = () => {
               key={index}
               className="flex flex-col items-center justify-center p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
               style={{
-                backgroundColor: "#f4ebb4", // Card background
-                border: "1px solid #ceba98", // Border color
+                backgroundColor: " #FFFFF0", // Card background
+                border: "1px solid #F7E7CE", // Border color
                 boxShadow: "0 6px 12px rgba(0, 0, 0, 0.1)", // Subtle shadow
               }}
             >
               <div
                 className="mb-4 p-4 rounded-full"
                 style={{
-                  backgroundColor: "#afc48a", // Icon background
-                  color: "#7d835f", // Icon color
+                  backgroundColor: " #D2C385", // Icon background
+                  color: " #D4AF37", // Icon color
                 }}
               >
                 {category.icon}
               </div>
               <h3
                 className="text-lg font-semibold mb-2"
-                style={{ color: "#8d5c51" }} // Title color
+                style={{ color: " #D4AF37" }} // Title color
               >
                 {category.name}
               </h3>
-              <p style={{ color: "#7d835f" }}>{category.items}</p>
+              <p style={{ color: " #D2C385" }}>{category.items}</p>
             </div>
           ))}
         </div>

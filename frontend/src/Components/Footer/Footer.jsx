@@ -3,9 +3,9 @@ import { FaFacebookF, FaFacebookMessenger, FaTwitter, FaWhatsapp, FaInstagram } 
 
 const Footer = () => {
   return (
-    <footer className="bg-[#f4ebb4] text-[#760000] py-16 px-4 md:px-12 relative overflow-hidden">
+    <footer className="bg-[ #FFFFFF] text-[ #D6C786] py-16 px-4 md:px-12 relative overflow-hidden rounded-t-3xl">
       {/* Curved Top Corners */}
-      <div className="absolute top-0 left-0 w-full h-40 bg-[#a87c6d] rounded-b-[50%] z-0"></div>
+      <div className="absolute top-0 left-0 w-full h-40 bg-[#6E7073] rounded-b-[50%] z-0"></div>
 
       <div className="relative z-10">
         {/* Main Content of the Footer */}
@@ -13,17 +13,17 @@ const Footer = () => {
           {/* Column 1: About Us */}
           <div>
             <h3 className="text-3xl font-semibold mb-6">About Us</h3>
-            <p className="text-lg leading-relaxed text-[#760000]">
+            <p className="text-lg leading-relaxed text-[#bdbfc2]">
               We are a leading provider of innovative solutions, dedicated to helping businesses grow in the digital era.
             </p>
             <div className="flex space-x-6 mt-6">
-              <a href="#" className="hover:text-[#760000] transition-all duration-300" aria-label="Facebook">
+              <a href="#" className="hover:text-[#D4AF37] transition-all duration-300" aria-label="Facebook">
                 <FaFacebookF size={24} />
               </a>
-              <a href="#" className="hover:text-[#760000] transition-all duration-300" aria-label="Twitter">
+              <a href="#" className="hover:text-[#D4AF37] transition-all duration-300" aria-label="Twitter">
                 <FaTwitter size={24} />
               </a>
-              <a href="#" className="hover:text-[#760000] transition-all duration-300" aria-label="LinkedIn">
+              <a href="#" className="hover:text-[#D4AF37] transition-all duration-300" aria-label="LinkedIn">
                 <FaWhatsapp size={24} />
               </a>
             </div>
@@ -51,22 +51,23 @@ const Footer = () => {
           {/* Column 3: Contact Info */}
           <div>
             <h3 className="text-3xl font-semibold mb-6">Contact Info</h3>
-            <p className="text-lg mb-4">Address: Section 12, Block C, Line No: 6, House No 13, Pallabi Thana Mirpur Dhaka 1216</p>
-            <p className="text-lg mb-4">Phone: (+880) 1714394330</p>
-            <p className="text-lg mb-4">Email: ruhanas0311@gmail.com</p>
-            <p className="text-lg mb-4">Emergency: (+880) 9638259714</p>
+            {/* <p className="text-[#bdbfc2] text-lg mb-4"><span className="text-[#D2C385]">Address:</span> Shop# 477, 3rd Floor, Police Plaza Concord Shopping Mall, Gulshan-1</p> */}
+            <p className="text-[#bdbfc2] text-md mb-4"><span className="text-[#D2C385]">Phone:</span> (+880) 1732700800</p>
+            <p className="text-[#bdbfc2] text-md mb-4"><span className="text-[#D2C385]">Emergency:</span> (+880) 9638756715</p>
+            <p className="text-[#bdbfc2] text-md"><span className="text-[#D2C385]">Email:</span> aarshi.designs.bd@gmail.com</p>
+
           </div>
 
           {/* Column 4: Social Media */}
           <div>
             <h3 className="text-3xl font-semibold mb-6">Follow Us</h3>
-            <p className="text-lg mb-6">Connect with us on social media:</p>
+            <p className="text-[#bdbfc2] text-lg mb-6">Connect with us on social media:</p>
             <div className="flex space-x-6 text-2xl">
               <a
                 href="https://www.facebook.com/smsharfarraz.jhony"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#760000] hover:text-[#4267B2] transition-all duration-300"
+                className="text-[#D4AF37] hover:text-[#4267B2] transition-all duration-300"
                 aria-label="Facebook"
               >
                 <FaFacebookF size={32} />
@@ -75,7 +76,7 @@ const Footer = () => {
                 href="https://messenger.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#760000] hover:text-[#00B2FF] transition-all duration-300"
+                className="text-[#D4AF37] hover:text-[#00B2FF] transition-all duration-300"
                 aria-label="Messenger"
               >
                 <FaFacebookMessenger size={32} />
@@ -84,7 +85,7 @@ const Footer = () => {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#760000] hover:text-[#1DA1F2] transition-all duration-300"
+                className="text-[#D4AF37] hover:text-[#1DA1F2] transition-all duration-300"
                 aria-label="Twitter"
               >
                 <FaTwitter size={32} />
@@ -93,7 +94,7 @@ const Footer = () => {
                 href="https://wa.me/8801714394330"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#760000] hover:text-[#25D366] transition-all duration-300"
+                className="text-[#D4AF37] hover:text-[#25D366] transition-all duration-300"
                 aria-label="WhatsApp"
               >
                 <FaWhatsapp size={32} />
@@ -102,7 +103,7 @@ const Footer = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#760000] hover:text-[#C13584] transition-all duration-300"
+                className="text-[#D4AF37] hover:text-[#C13584] transition-all duration-300"
                 aria-label="Instagram"
               >
                 <FaInstagram size={32} />
@@ -116,7 +117,7 @@ const Footer = () => {
           <div className="absolute top-0 left-0 w-full h-full">
             <iframe
               className="w-full h-full border-0"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3991.173002676015!2d90.36323174413143!3d23.827340459307717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1ae043955f1%3A0x9b5859a2015ec2a0!2sRuhanas%20Fashion%20Studio!5e1!3m2!1sen!2sbd!4v1733498032045!5m2!1sen!2sbd"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45108.576678048914!2d90.35026603125!3d23.772882999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7351c5b1ba7%3A0x8564f7396612e528!2sAarshi%20Designs!5e1!3m2!1sen!2sbd!4v1735896481278!5m2!1sen!2sbd"
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -126,9 +127,9 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom Section */}
-      <div className="bg-[#a0926c] py-6 text-center rounded-md mt-16">
-        <p className="text-lg text-[#fff]">
-          &copy; 2024 Ruhanas. All Rights Reserved.
+      <div className="bg-[#6E7073] py-6 text-center rounded-md mt-16">
+        <p className="text-lg text-[#D4AF37]">
+          &copy; 2025 Aarshi Designs. All Rights Reserved.
         </p>
       </div>
     </footer>

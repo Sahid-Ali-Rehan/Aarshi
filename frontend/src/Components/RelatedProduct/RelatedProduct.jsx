@@ -33,7 +33,7 @@ const RelatedProducts = ({ category }) => {
 
   return (
     <div className="mt-10">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">Related Products</h2>
+      <h2 className="text-2xl font-bold mb-4 text-[#D4AF37]">Related Products</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {relatedProducts.map((product) => {
           const discountedPrice = calculateDiscountedPrice(
@@ -43,7 +43,7 @@ const RelatedProducts = ({ category }) => {
           return (
             <div
               key={product._id}
-              className="bg-white shadow-lg mb-8 overflow-hidden transform transition-transform duration-300 hover:scale-105 rounded-md"
+              className="bg-[#FFF8E7] border-2 border-[#D4AF37] shadow-lg mb-8 overflow-hidden transform transition-transform duration-300 hover:scale-105 rounded-md"
             >
               <div className="relative group">
                 <img
@@ -58,11 +58,11 @@ const RelatedProducts = ({ category }) => {
                 />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold text-lg text-[#7b7c4d] truncate">
+                <h3 className="font-semibold text-lg text-[#D4AF37] truncate">
                   {product.productName}
                 </h3>
                 <p className="text-sm text-gray-600">{product.productCode}</p>
-                <p className="font-semibold text-xl mt-2 text-[#7b7c4d]">
+                <p className="font-semibold text-xl mt-2 text-[#D4AF37]">
                   ৳{discountedPrice.toFixed(2)}{' '}
                   {product.discount > 0 && (
                     <span className="line-through text-sm text-gray-400">
@@ -73,7 +73,7 @@ const RelatedProducts = ({ category }) => {
               </div>
               <Link to={`/products/single/${product._id}`}>
                 <button
-                  className="w-full bg-[#7b7c4d] text-white py-2 mt-4 hover:bg-[#a2a25b] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#a2a25b] focus:ring-opacity-50"
+                  className="w-full bg-[#D4AF37] text-white py-2 mt-4 hover:bg-[#D2C385] hover:text-[#D4AF37] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:ring-opacity-50"
                 >
                   View Details
                 </button>

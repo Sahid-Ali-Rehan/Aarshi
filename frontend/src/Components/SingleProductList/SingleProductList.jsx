@@ -216,7 +216,7 @@ const toggleReviewModal = () => setReviewModalOpen((prev) => !prev);
   
 
   return (
-    <div className="bg-[#F4EBB4]">
+    <div className="bg-[ #FFFFFF]">
       <Navbar />
       <div className="max-w-7xl mx-auto bg-white py-14 px-6 sm:px-12 md:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -261,8 +261,8 @@ const toggleReviewModal = () => setReviewModalOpen((prev) => !prev);
           </div>
 
           <div className="space-y-6">
-            <h1 className="text-3xl font-extrabold text-gray-800">{product.productName}</h1>
-            <p className="text-lg text-gray-600">Product Code: {product.productCode}</p>
+            <h1 className="text-3xl font-extrabold text-[#D4AF37]">{product.productName}</h1>
+            <p className="text-lg text-[#D4AF37]"><span className="text-gray-800">Product Code:</span> {product.productCode}</p>
            
             {averageRating && (
   <div className="mt-4 flex items-center">
@@ -291,16 +291,16 @@ const toggleReviewModal = () => setReviewModalOpen((prev) => !prev);
 )}
 
             <div>
-              <p className="text-2xl font-bold text-indigo-600">
+              <p className="text-2xl font-bold text-[#D4AF37]">
                 Tk. {discountedPrice.toFixed(2)}{" "}
-                <span className="line-through text-gray-400">Tk. {selectedSizePrice}</span>
+                <span className="line-through text-[#D2C385]">Tk. {selectedSizePrice}</span>
               </p>
-              <p className="text-md text-gray-500">You Save: Tk. {(selectedSizePrice - discountedPrice).toFixed(2)}</p>
+              <p className="text-md text-[#D2C385]">You Save: Tk. {(selectedSizePrice - discountedPrice).toFixed(2)}</p>
             </div>
 
             {/* Size Selection */}
             <div className="mt-6">
-              <h3 className="text-xl font-semibold text-gray-700">Select Size</h3>
+              <h3 className="text-xl font-semibold text-[#D4AF37]">Select Size</h3>
               <div className="grid grid-cols-4 gap-2 mt-3">
                 {product.availableSizes.map((sizeObj) => (
                   <motion.button
@@ -322,7 +322,7 @@ const toggleReviewModal = () => setReviewModalOpen((prev) => !prev);
 
             {/* Color Selection */}
             <div className="mt-6">
-              <h3 className="text-xl font-semibold text-gray-700">Select Color</h3>
+              <h3 className="text-xl font-semibold text-[#D4AF37]">Select Color</h3>
               <div className="flex space-x-3 mt-3">
                 {product.availableColors.map((color) => (
                   <motion.button
@@ -341,7 +341,7 @@ const toggleReviewModal = () => setReviewModalOpen((prev) => !prev);
 
             {/* Quantity */}
             <div className="mt-6">
-              <h3 className="text-xl font-semibold text-gray-700">Quantity</h3>
+              <h3 className="text-xl font-semibold text-[#D4AF37]">Quantity</h3>
               <div className="flex items-center space-x-4 mt-3">
                 <button
                   onClick={() => handleQuantityChange(quantity - 1)}
@@ -362,7 +362,7 @@ const toggleReviewModal = () => setReviewModalOpen((prev) => !prev);
 
             <motion.button
               onClick={() => addToCart(product)}
-              className="w-full py-4 bg-indigo-600 text-white text-lg font-bold rounded-xl mt-6 hover:bg-indigo-700 transition-all"
+              className="w-full py-4 bg-[ #D4AF37] text-white text-lg font-bold rounded-xl mt-6 hover:bg-[ #D2C385] transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -376,13 +376,13 @@ const toggleReviewModal = () => setReviewModalOpen((prev) => !prev);
           <div className="flex space-x-4">
             <button
               onClick={() => setActiveTab("description")}
-              className={`px-4 py-2 text-sm font-medium ${activeTab === "description" ? "bg-[#8d5c51] text-white" : "bg-[#f4ebb4] text-black"}`}
+              className={`px-4 py-2 text-sm font-medium ${activeTab === "description" ? "bg-[#D4AF37] text-white" : "bg-[#D2C385] text-black"}`}
             >
               Description
             </button>
             <button
               onClick={() => setActiveTab("sizeChart")}
-              className={`px-4 py-2 text-sm font-medium ${activeTab === "sizeChart" ? "bg-[#8d5c51] text-white" : "bg-[#f4ebb4] text-black"}`}
+              className={`px-4 py-2 text-sm font-medium ${activeTab === "sizeChart" ? "bg-[#D4AF37] text-white" : "bg-[#D2C385] text-black"}`}
             >
               Size Chart
             </button>
@@ -407,7 +407,7 @@ const toggleReviewModal = () => setReviewModalOpen((prev) => !prev);
         </div>
 
 
-        <div className="mt-10">
+        <div className="mt-10 mb-4">
   <h2 className="text-2xl font-bold mb-4">Customer Reviews</h2>
   {reviews.length > 0 ? (
     reviews.map((review, idx) => (
@@ -418,7 +418,7 @@ const toggleReviewModal = () => setReviewModalOpen((prev) => !prev);
       </div>
     ))
   ) : (
-    <p>No reviews yet.</p>
+    <p className="pb-4">No reviews yet.</p>
   )}
 
   {/* <h3 className="text-xl font-semibold mt-6">Add Your Review</h3>
@@ -446,7 +446,7 @@ const toggleReviewModal = () => setReviewModalOpen((prev) => !prev);
   </div> */}
 
 <button
-  className="px-4 py-2 bg-[#F4EBB4] text-black hover:bg-[#8D5C51] hover:text-white
+  className="px-4 py-2 bg-[#D4AF37] text-white hover:bg-[#D2C385] hover:text-white
 "
   onClick={toggleReviewModal}
 >
@@ -454,7 +454,7 @@ const toggleReviewModal = () => setReviewModalOpen((prev) => !prev);
 </button>
 
 {isReviewModalOpen && (
-  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-md z-50">
+  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-md z-50 pt-4">
     <motion.div
       initial={{ scale: 0.8, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}

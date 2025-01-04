@@ -5,7 +5,7 @@ const FeaturedProduct = () => {
   return (
     <section
       className="py-16"
-      style={{ backgroundColor: "#faeed5" }} // Background color
+      style={{ backgroundColor: "#FFFFFF" }} // Background color
     >
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
@@ -26,26 +26,26 @@ const FeaturedProduct = () => {
           <div className="flex flex-col justify-center">
             <h2
               className="text-3xl font-bold mb-4"
-              style={{ color: "#8d5c51" }} // Title color
+              style={{ color: "#D4AF37" }} // Title color
             >
-              Handcrafted Rose Ribbon Vase
+              Elegant White Kurta with Black Floral Accents
             </h2>
             <p
               className="text-md mb-6"
-              style={{ color: "#7b7c4d" }} // Subtitle color
+              style={{ color: "#D2C385" }} // Subtitle color
             >
-              Add a touch of elegance to your space with this beautifully handcrafted vase, wrapped in vibrant multicolor yarn and adorned with delicate pink fabric roses. Perfect as a decorative centerpiece or a charming gift for loved ones. Durable and lightweight, this vase effortlessly blends style and utility.
+              A premium white kurta featuring sophisticated black floral accents on the collar and pocket. Crafted from high-quality fabric, this kurta is perfect for formal gatherings and festive occasions. Its modern design ensures comfort and style, making it a versatile choice for your wardrobe.
             </p>
             <div className="flex items-center mb-6">
               <p
                 className="text-3xl font-bold mr-4"
                 style={{ color: "#7d835f" }} // Price color
               >
-                ৳1299.00
+                ৳1250.00
               </p>
               <span
                 className="text-sm line-through"
-                style={{ color: "#bb9e8c" }} // Discount color
+                style={{ color: "#D2C385" }} // Discount color
               >
                 ৳2000.00
               </span>
@@ -54,15 +54,15 @@ const FeaturedProduct = () => {
             <button
               className="flex items-center px-6 py-3 rounded-lg shadow-lg transition-all duration-300"
               style={{
-                backgroundColor: "#996a6c", // Button background
+                backgroundColor: "#D2C385", // Button background
                 color: "#fff", // Button text
                 boxShadow: "0 6px 12px rgba(0, 0, 0, 0.1)", // Button shadow
               }}
               onMouseOver={(e) =>
-                (e.currentTarget.style.backgroundColor = "#7b7c4d")
+                (e.currentTarget.style.backgroundColor = "rgb(223, 211, 162)")
               } // Hover effect
               onMouseOut={(e) =>
-                (e.currentTarget.style.backgroundColor = "#996a6c")
+                (e.currentTarget.style.backgroundColor = " #D2C385")
               }
             >
               <FaShoppingCart className="mr-2" />
