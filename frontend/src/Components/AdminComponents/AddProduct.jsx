@@ -117,9 +117,9 @@ const AddProduct = () => {
   
 
   return (
-    <div className="p-8 bg-[#f4ebb4] min-h-screen">
-      <h2 className="text-3xl font-bold text-[#8d5c51] mb-6">Add New Product</h2>
-      <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
+    <div className="p-8 bg-[#ffdf99] min-h-screen">
+      <h2 className="text-3xl font-bold text-[#D4AF37] mb-6 text-center">Add New Product</h2>
+      <form onSubmit={handleSubmit} className="bg-[#FFF8E7] p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
   <div className="grid grid-cols-2 gap-6">
     <input
       type="text"
@@ -127,7 +127,7 @@ const AddProduct = () => {
       placeholder="Product Name"
       value={formData.productName}
       onChange={handleChange}
-      className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+      className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
       required
     />
     <input
@@ -136,7 +136,7 @@ const AddProduct = () => {
       placeholder="Product Code"
       value={formData.productCode}
       onChange={handleChange}
-      className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+      className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
       required
     />
     <textarea
@@ -144,7 +144,7 @@ const AddProduct = () => {
       placeholder="Description"
       value={formData.description}
       onChange={handleChange}
-      className="p-3 border rounded-lg w-full col-span-2 text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+      className="p-3 border rounded-lg w-full col-span-2 text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
       rows="3"
       required
     />
@@ -155,7 +155,7 @@ const AddProduct = () => {
     placeholder="Price"
     value={formData.price}
     onChange={handleChange}
-    className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+    className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
     required
   />
   <input
@@ -164,10 +164,10 @@ const AddProduct = () => {
     placeholder="Discount (%)"
     value={formData.discount}
     onChange={handleChange}
-    className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+    className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
   />
 </div>
-<div className="mt-4 text-lg font-semibold text-[#8d5c51]">
+<div className="mt-4 text-lg font-semibold text-[#D2C385] ">
   Discounted Price: {formData.price - (formData.price * formData.discount) / 100 || 0} TK
 </div>
 
@@ -177,7 +177,7 @@ const AddProduct = () => {
       placeholder="Stock"
     //   value={formData.stock}
       onChange={handleChange}
-      className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+      className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
       required
     />
     <input
@@ -186,7 +186,7 @@ const AddProduct = () => {
       placeholder="Category"
       value={formData.category}
       onChange={handleChange}
-      className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+      className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
       required
     />
     <input
@@ -195,7 +195,7 @@ const AddProduct = () => {
       placeholder="Sub-Category"
       value={formData.subCategory}
       onChange={handleChange}
-      className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+      className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
     />
     <input
       type="text"
@@ -203,7 +203,7 @@ const AddProduct = () => {
       placeholder="Size Chart URL (optional)"
       value={formData.sizeChart}
       onChange={handleChange}
-      className="p-3 border rounded-lg w-full col-span-2 text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+      className="p-3 border rounded-lg w-full col-span-2 text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
     />
     <input
   type="text"
@@ -211,14 +211,14 @@ const AddProduct = () => {
   placeholder="Video URL"
   value={formData.videoUrl || ''}
   onChange={handleChange}
-  className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+  className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
 />
 
   </div>
 
   {/* Dynamic Image URLs */}
   <div className="mt-4">
-    <label className="font-semibold block mb-2 text-[#8d5c51]">Product Images (1-5)</label>
+    <label className="font-semibold block mb-2 text-[#D4AF37]">Product Images (1-5)</label>
     {formData.images.map((image, index) => (
       <div key={index} className="flex items-center gap-2 mb-2">
         <input
@@ -226,13 +226,13 @@ const AddProduct = () => {
           placeholder={`Image URL ${index + 1}`}
           value={image}
           onChange={(e) => handleImageChange(index, e.target.value)}
-          className="p-2 border rounded-lg flex-1 text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+          className="p-2 border rounded-lg flex-1 text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
         />
         {formData.images.length > 1 && (
           <button
             type="button"
             onClick={() => removeImageField(index)}
-            className="bg-[#996a6c] text-white px-3 py-1 rounded-lg"
+            className="bg-[#D2C385] text-white px-3 py-1 rounded-lg"
           >
             Remove
           </button>
@@ -243,7 +243,7 @@ const AddProduct = () => {
       <button
         type="button"
         onClick={addImageField}
-        className="bg-[#7d835f] text-white px-4 py-2 rounded-lg"
+        className="bg-[#D4AF37] text-white px-4 py-2 rounded-lg"
       >
         Add Image
       </button>
@@ -253,13 +253,13 @@ const AddProduct = () => {
   {/* Color and Size Input */}
   <div className="mt-4 grid grid-cols-2 gap-6">
     <div>
-      <label className="font-semibold block mb-2 text-[#8d5c51]">Available Colors</label>
+      <label className="font-semibold block mb-2 text-[#D4AF37]">Available Colors</label>
       <input
         type="text"
         placeholder="Enter colors (comma separated)"
         value={formData.availableColors.join(', ')}
         onChange={handleColorsChange}
-        className="p-2 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+        className="p-2 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
       />
     </div>
     {/* <div>
@@ -275,7 +275,7 @@ const AddProduct = () => {
   </div>
 
   <div className="mt-4">
-  <label className="font-semibold block mb-2 text-[#8d5c51]">Available Sizes & Prices</label>
+  <label className="font-semibold block mb-2 text-[#D4AF37]">Available Sizes & Prices</label>
   {sizes.map((sizeEntry, index) => (
     <div key={index} className="flex gap-4 mb-2">
       <input
@@ -283,20 +283,20 @@ const AddProduct = () => {
         placeholder="Size"
         value={sizeEntry.size}
         onChange={(e) => handleSizeChange(index, 'size', e.target.value)}
-        className="p-3 border rounded-lg w-1/2 text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+        className="p-3 border rounded-lg w-1/2 text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
       />
       <input
         type="number"
         placeholder="Price"
         // value={sizeEntry.sizePrice}
         onChange={(e) => handleSizeChange(index, 'sizePrice', e.target.value)}
-        className="p-3 border rounded-lg w-1/2 text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+        className="p-3 border rounded-lg w-1/2 text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
       />
       {sizes.length > 1 && (
         <button
           type="button"
           onClick={() => removeSizeField(index)}
-          className="text-red-600 font-semibold"
+          className="text-[#D2C385] font-semibold"
         >
           Remove
         </button>
@@ -306,7 +306,7 @@ const AddProduct = () => {
   <button
     type="button"
     onClick={addSizeField}
-    className="bg-[#8d5c51] text-white px-4 py-2 rounded-lg"
+    className="bg-[#D4AF37] text-white px-4 py-2 rounded-lg"
   >
     Add Size
   </button>
@@ -324,11 +324,11 @@ const AddProduct = () => {
       onChange={handleChange}
       className="h-5 w-5"
     />
-    <label htmlFor="isBestSeller" className="text-[#8d5c51]">Best Seller</label>
+    <label htmlFor="isBestSeller" className="text-[#D4AF37]">Best Seller</label>
   </div>
 
   <div className="mt-6">
-    <button type="submit" className="bg-[#a0926c] text-white px-6 py-2 rounded-lg hover:bg-[#7b7c4d]">
+    <button type="submit" className="bg-[#D4AF37] text-white px-6 py-2 rounded-lg hover:bg-[#D2C385]">
       Add Product
     </button>
   </div>

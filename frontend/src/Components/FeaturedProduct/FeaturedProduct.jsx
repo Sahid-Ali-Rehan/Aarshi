@@ -39,7 +39,7 @@ const FeaturedProduct = () => {
             <div className="flex items-center mb-6">
               <p
                 className="text-3xl font-bold mr-4"
-                style={{ color: "#7d835f" }} // Price color
+                style={{ color: "#D4AF37" }} // Price color
               >
                 ৳1250.00
               </p>

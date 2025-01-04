@@ -64,7 +64,7 @@ const Footer = () => {
             <p className="text-[#bdbfc2] text-lg mb-6">Connect with us on social media:</p>
             <div className="flex space-x-6 text-2xl">
               <a
-                href="https://www.facebook.com/smsharfarraz.jhony"
+                href="https://www.facebook.com/AarshiDesigns"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#D4AF37] hover:text-[#4267B2] transition-all duration-300"
@@ -73,7 +73,7 @@ const Footer = () => {
                 <FaFacebookF size={32} />
               </a>
               <a
-                href="https://messenger.com"
+                href="https://www.messenger.com/t/920786114695171"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#D4AF37] hover:text-[#00B2FF] transition-all duration-300"
@@ -91,7 +91,7 @@ const Footer = () => {
                 <FaTwitter size={32} />
               </a>
               <a
-                href="https://wa.me/8801714394330"
+                href="https://wa.me/8801576933468"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#D4AF37] hover:text-[#25D366] transition-all duration-300"
@@ -100,7 +100,7 @@ const Footer = () => {
                 <FaWhatsapp size={32} />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/aarshi.designs.bd/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#D4AF37] hover:text-[#C13584] transition-all duration-300"

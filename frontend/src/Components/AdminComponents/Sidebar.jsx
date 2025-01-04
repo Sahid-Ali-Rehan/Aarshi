@@ -4,7 +4,7 @@ import { FaTachometerAlt, FaPlusCircle, FaBox, FaShoppingCart, FaUsers } from 'r
 
 const Sidebar = () => {
   return (
-    <div className="bg-[#7b7c4d] w-64 p-5 text-[#f4ebb4] h-screen sticky top-0">
+    <div className="bg-[#6E7073] w-64 p-5 text-[#f4ebb4] h-screen sticky top-0">
       <h1 className="text-3xl font-bold mb-6">Admin Panel</h1>
       <ul>
         <li className="mb-4">

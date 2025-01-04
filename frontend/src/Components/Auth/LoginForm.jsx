@@ -39,55 +39,55 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="h-screen flex items-center justify-center bg-[#f4ebb4]">
+    <div className="h-screen flex items-center justify-center bg-[#ffdf99]">
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full"
+        className="bg-[#FFF8E7] p-8 rounded-lg shadow-lg max-w-md w-full"
       >
-        <h2 className="text-2xl font-bold text-center text-[#8d5c51] mb-4">Login</h2>
-        <div className="flex items-center mb-4 border-b border-[#7b7c4d]">
-          <AiOutlineMail className="text-2xl text-[#7b7c4d] mr-2" />
+        <h2 className="text-2xl font-bold text-center text-[#D4AF37] mb-4">Login</h2>
+        <div className="flex items-center mb-4 border-b border-[#D4AF37]">
+          <AiOutlineMail className="text-2xl text-[#D4AF37] mr-2" />
           <input
             type="email"
             name="email"
             placeholder="Enter your email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full focus:outline-none text-[#7d835f]"
+            className="w-full focus:outline-none text-[#D2C385] bg-[#FFF8E7]"
             required
           />
         </div>
-        <div className="flex items-center mb-6 border-b border-[#7b7c4d]">
-          <AiOutlineLock className="text-2xl text-[#7b7c4d] mr-2" />
+        <div className="flex items-center mb-6 border-b border-[#D4AF37]">
+          <AiOutlineLock className="text-2xl text-[#D4AF37] mr-2" />
           <input
             type={showPassword ? "text" : "password"} // toggle password visibility
             name="password"
             placeholder="Enter your password"
             value={formData.password}
             onChange={handleChange}
-            className="w-full focus:outline-none text-[#7d835f]"
+            className="w-full focus:outline-none text-[#D2C385] bg-[#FFF8E7]"
             required
           />
           <button
             type="button"
             onClick={() => setShowPassword(!showPassword)} // toggle showPassword state
-            className="ml-2 text-[#996a6c]"
+            className="ml-2 text-[#D4AF37]"
           >
             {showPassword ? "Hide" : "Show"}
           </button>
         </div>
         <button
           type="submit"
-          className="w-full bg-[#8d5c51] text-white py-2 rounded-md hover:bg-[#7b7c4d] transition-all"
+          className="w-full bg-[#D4AF37] text-white py-2 rounded-md hover:bg-[#D2C385] transition-all"
         >
           Login
         </button>
-        <p className="text-center text-[#7d835f] mt-4">
+        <p className="text-center text-[#D2C385] mt-4">
           Don't have an account?{" "}
           <button
             type="button"
             onClick={() => navigate("/signup")}
-            className="text-[#8d5c51] font-semibold"
+            className="text-[#D4AF37] font-semibold"
           >
             Sign up
           </button>

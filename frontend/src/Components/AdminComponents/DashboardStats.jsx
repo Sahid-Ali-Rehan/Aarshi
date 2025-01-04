@@ -47,7 +47,8 @@ const DashboardStats = () => {
             datasets: [
               {
                 data: [orders, products, users],
-                backgroundColor: ['#bb9e8c', '#faeed5', '#996a6c'],
+                backgroundColor: ['#D4AF37', '#D2C385', '#bb9e8c'],  // Gold shades
+                hoverBackgroundColor: ['#D2C385', '#D4AF37', '#996a6c'],  // Hover effect with golden hues
               },
             ],
           });
@@ -58,9 +59,11 @@ const DashboardStats = () => {
               {
                 label: 'Sales',
                 data: salesData.values,
-                borderColor: '#8d5c51',
+                borderColor: '#D4AF37',  // Gold-colored border for sales data line
                 fill: true,
-                backgroundColor: 'rgba(141, 92, 81, 0.2)',
+                backgroundColor: 'rgba(212, 175, 55, 0.2)', // Light golden fill for sales trend
+                pointBackgroundColor: '#D4AF37', // Gold-colored points
+                pointBorderColor: '#996a6c', // Darker border for points
               },
             ],
           });
@@ -79,11 +82,11 @@ const DashboardStats = () => {
   if (!donutData || !lineData) {
     return (
       <div className="grid grid-cols-2 gap-6">
-        <div className="bg-[#afaf8a] p-6 rounded-lg shadow-lg">
+        <div className="bg-[#FFF8E7] p-6 rounded-lg shadow-lg">
           <h3 className="text-xl font-semibold mb-4">Overview</h3>
           <Skeleton height={200} /> {/* Skeleton loader for the donut chart */}
         </div>
-        <div className="bg-[#faeed5] p-6 rounded-lg shadow-lg">
+        <div className="bg-[#FFF8E7] p-6 rounded-lg shadow-lg">
           <h3 className="text-xl font-semibold mb-4">Sales Trend</h3>
           <Skeleton height={200} /> {/* Skeleton loader for the line chart */}
         </div>
@@ -93,11 +96,11 @@ const DashboardStats = () => {
 
   return (
     <div className="grid grid-cols-2 gap-6">
-      <div className="bg-[#afaf8a] p-6 rounded-lg shadow-lg">
+      <div className="bg-[#FFF8E7] p-6 rounded-lg shadow-lg">
         <h3 className="text-xl font-semibold mb-4">Overview</h3>
         <Doughnut data={donutData} />
       </div>
-      <div className="bg-[#faeed5] p-6 rounded-lg shadow-lg">
+      <div className="bg-[#FFF8E7] p-6 rounded-lg shadow-lg">
         <h3 className="text-xl font-semibold mb-4">Sales Trend</h3>
         <Line data={lineData} />
       </div>

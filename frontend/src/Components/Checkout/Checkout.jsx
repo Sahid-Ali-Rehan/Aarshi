@@ -120,39 +120,39 @@ const Checkout = () => {
           <ul className="space-y-2">
             {cartItems.map((item) => (
               <li key={item._id + item.selectedSize + item.selectedColor} className="flex justify-between">
-                <p>{item.productName} (x{item.quantity})</p>
-                <p>
+                <p className="text-[#D4AF37]">{item.productName} (x{item.quantity})</p>
+                <p className="text-[#D2C385]">
                   Tk. {(item.quantity * item.price * (1 - item.discount / 100)).toFixed(2)}
                 </p>
               </li>
             ))}
           </ul>
           <div className="flex justify-between font-semibold mt-4">
-            <p>Delivery Charge:</p>
-            <p>Tk. {deliveryCharge.toFixed(2)}</p>
+            <p className="text-[#D2C385]">Delivery Charge:</p>
+            <p className="text-[#D2C385]">Tk. {deliveryCharge.toFixed(2)}</p>
           </div>
           <div className="flex justify-between font-bold text-lg mt-4">
-            <p>Total:</p>
-            <p>Tk. {totalPrice.toFixed(2)}</p>
+            <p className="text-[#D4AF37]">Total:</p>
+            <p className="text-[#D4AF37]">Tk. {totalPrice.toFixed(2)}</p>
           </div>
         </div>
 
         <form onSubmit={handleSubmit}>
           <div className="grid gap-4 mb-6">
-            <input type="text" name="name" placeholder="Full Name" value={userDetails.name} onChange={handleInputChange} required className="border p-3 rounded w-full" />
-            <input type="email" name="email" placeholder="Email" value={userDetails.email} onChange={handleInputChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="phone" placeholder="Phone Number" value={userDetails.phone} onChange={handleInputChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="state" placeholder="State/City" value={userDetails.state} onChange={handleInputChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="jela" placeholder="District (Jela)" value={userDetails.jela} onChange={handleInputChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="upazela" placeholder="Sub-district (Upazela)" value={userDetails.upazela} onChange={handleInputChange} required className="border p-3 rounded w-full" />
-            <textarea name="address" placeholder="Delivery Address" value={userDetails.address} onChange={handleInputChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="postalCode" placeholder="Postal Code" value={userDetails.postalCode} onChange={handleInputChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="zip" placeholder="ZIP Code" value={userDetails.zip} onChange={handleInputChange} required className="border p-3 rounded w-full" />
-            <select name="paymentMethod" value={userDetails.paymentMethod} onChange={handleInputChange} required className="border p-3 rounded w-full">
-              <option value="COD">Cash on Delivery</option>
+            <input type="text" name="name" placeholder="Full Name" value={userDetails.name} onChange={handleInputChange} required className="border p-3 rounded w-full text-[#D4AF37]" />
+            <input type="email" name="email" placeholder="Email" value={userDetails.email} onChange={handleInputChange} required className="border p-3 rounded w-full text-[#D4AF37]" />
+            <input type="text" name="phone" placeholder="Phone Number" value={userDetails.phone} onChange={handleInputChange} required className="border p-3 rounded w-full text-[#D4AF37]" />
+            <input type="text" name="state" placeholder="State/City" value={userDetails.state} onChange={handleInputChange} required className="border p-3 rounded w-full text-[#D4AF37]" />
+            <input type="text" name="jela" placeholder="District (Jela)" value={userDetails.jela} onChange={handleInputChange} required className="border p-3 rounded w-full text-[#D4AF37]" />
+            <input type="text" name="upazela" placeholder="Sub-district (Upazela)" value={userDetails.upazela} onChange={handleInputChange} required className="border p-3 rounded w-full text-[#D4AF37]" />
+            <textarea name="address" placeholder="Delivery Address" value={userDetails.address} onChange={handleInputChange} required className="border p-3 rounded w-full text-[#D4AF37]" />
+            <input type="text" name="postalCode" placeholder="Postal Code" value={userDetails.postalCode} onChange={handleInputChange} required className="border p-3 rounded w-full text-[#D4AF37]" />
+            <input type="text" name="zip" placeholder="ZIP Code" value={userDetails.zip} onChange={handleInputChange} required className="border p-3 rounded w-full text-[#D4AF37]" />
+            <select name="paymentMethod" value={userDetails.paymentMethod} onChange={handleInputChange} required className="border p-3 rounded w-full text-[#D4AF37]">
+              <option value="COD" className="text-[#D4AF37]">Cash on Delivery</option>
             </select>
           </div>
-          <button type="submit" className="px-6 py-3 bg-[#8d5c51] text-white rounded hover:bg-[#7d835f] transition w-full">
+          <button type="submit" className="px-6 py-3 bg-[#D4AF37] text-white rounded hover:bg-[#D2C385] transition w-full">
             Place Order
           </button>
         </form>

@@ -66,10 +66,10 @@ const AllUsers = () => {
   }
 
   return (
-    <div className="overflow-x-auto">
-      <table className="min-w-full border-collapse">
+    <div className="overflow-x-auto p-8 bg-[#FAEED5] w-full h-screen">
+      <table className="min-w-full border-collapse bg-[#f4ebb4] border border-[#a0926c] shadow-lg rounded-lg">
         <thead>
-          <tr>
+          <tr className="bg-[#D4AF37] text-white">
             <th className="border-b px-4 py-2">User ID</th> {/* Added User ID */}
             <th className="border-b px-4 py-2">Username</th>
             <th className="border-b px-4 py-2">Email</th>
@@ -79,7 +79,7 @@ const AllUsers = () => {
         </thead>
         <tbody>
           {users.map(user => (
-            <tr key={user.uid}>
+            <tr key={user.uid} className="hover:bg-[#D2C385]">
               <td className="border-b px-4 py-2">{user.uid}</td> {/* Displaying User ID */}
               <td className="border-b px-4 py-2">{user.username}</td>
               <td className="border-b px-4 py-2">{user.email}</td>
@@ -87,13 +87,13 @@ const AllUsers = () => {
               <td className="border-b px-4 py-2">
                 <button
                   onClick={() => changeRole(user.uid)}
-                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-200"
+                  className="bg-[#D4AF37] text-white px-4 py-2 rounded hover:bg-[#B48A2E] transition duration-200"
                 >
                   Change Role
                 </button>
                 <button
                   onClick={() => deleteUser(user.uid)}
-                  className="bg-red-500 text-white px-4 py-2 rounded ml-2 hover:bg-red-700 transition duration-200"
+                  className="bg-[#B74E4E] text-white px-4 py-2 rounded ml-2 hover:bg-[#9B3838] transition duration-200"
                 >
                   Delete
                 </button>

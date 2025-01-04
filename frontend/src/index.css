@@ -38,9 +38,9 @@ button:hover {
 
 /* Default text inputs */
 input, textarea {
-  @apply border border-[#7d835f] rounded-md p-2 w-full text-[#2C2C2C];
+  @apply text-[#D2C385];
   font-family: 'Lato', sans-serif;
-  background-color: #FFFFF0; /* Ivory */
+  /* background-color: #FFFFF0; Ivory */
 }
 
 input:focus, textarea:focus {
@@ -56,4 +56,40 @@ input:focus, textarea:focus {
 /* Footer or secondary text */
 .footer-text {
   @apply text-[#6E7073] text-sm;
+}
+
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;  /* Smaller width for a sleeker look */
+  height: 8px; /* For horizontal scrollbar */
+}
+
+/* Style the scrollbar track (the background) */
+::-webkit-scrollbar-track {
+  background: #D4AF37; /* Deep/parent color */
+  border-radius: 10px;
+  z-index: 1; /* Ensuring it's not on top of the navbar */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #D2C385; /* Light/children color */
+  border-radius: 10px;
+  border: 2px solid #D4AF37; /* Optional: A border to make it more distinct */
+}
+
+/* Optional: Hover effect to change thumb color */
+::-webkit-scrollbar-thumb:hover {
+  background: #C9B172; /* Darker shade for hover */
+}
+
+/* Ensure that the scrollbar does not have a high z-index */
+html {
+  z-index: 0;
+}
+
+/* Optional: Fixing overflow issues in body or main content */
+body {
+  overflow: auto;
 }

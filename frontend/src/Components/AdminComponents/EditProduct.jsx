@@ -78,9 +78,9 @@ const EditProduct = () => {
   };
 
   return (
-    <div className="p-8 bg-[#f4ebb4] min-h-screen">
-      <h2 className="text-3xl font-bold text-[#8d5c51] mb-6">Edit Product</h2>
-      <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-xl">
+    <div className="p-8 bg-[#ffdf99] min-h-screen">
+      <h2 className="text-3xl font-bold text-[#D4AF37] mb-6 text-center">Edit Product</h2>
+      <form onSubmit={handleSubmit} className="bg-[#FFF8E7] p-6 rounded-lg shadow-xl">
         <div className="grid grid-cols-2 gap-6">
           <input
             type="text"
@@ -88,7 +88,7 @@ const EditProduct = () => {
             placeholder="Product Name"
             value={formData.productName}
             onChange={handleChange}
-            className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+            className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
             required
           />
           <input
@@ -97,7 +97,7 @@ const EditProduct = () => {
             placeholder="Product Code"
             value={formData.productCode}
             onChange={handleChange}
-            className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+            className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
             required
           />
           <textarea
@@ -105,7 +105,7 @@ const EditProduct = () => {
             placeholder="Description"
             value={formData.description}
             onChange={handleChange}
-            className="p-3 border rounded-lg w-full col-span-2 text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+            className="p-3 border rounded-lg w-full col-span-2 text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
             rows="3"
             required
           />
@@ -115,7 +115,7 @@ const EditProduct = () => {
             placeholder="Price"
             value={formData.price}
             onChange={handleChange}
-            className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+            className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
             required
           />
           <input
@@ -124,7 +124,7 @@ const EditProduct = () => {
             placeholder="Discount (%)"
             value={formData.discount}
             onChange={handleChange}
-            className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+            className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
             required
           />
           <input
@@ -133,7 +133,7 @@ const EditProduct = () => {
             placeholder="Stock"
             value={formData.stock}
             onChange={handleChange}
-            className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+            className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
             required
           />
           <input
@@ -142,7 +142,7 @@ const EditProduct = () => {
             placeholder="Category"
             value={formData.category}
             onChange={handleChange}
-            className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+            className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
             required
           />
           <input
@@ -151,7 +151,7 @@ const EditProduct = () => {
             placeholder="Sub Category"
             value={formData.subCategory}
             onChange={handleChange}
-            className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+            className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
             required
           />
           <div className="col-span-2 flex items-center">
@@ -162,7 +162,7 @@ const EditProduct = () => {
               onChange={handleChange}
               className="mr-2"
             />
-            <label htmlFor="isBestSeller" className="text-[#7b7c4d]">
+            <label htmlFor="isBestSeller" className="text-[#D2C385]">
               Best Seller
             </label>
           </div>
@@ -171,16 +171,16 @@ const EditProduct = () => {
         {/* Color and Size Input */}
   <div className="mt-4 grid grid-cols-2 gap-6">
     <div>
-      <label className="font-semibold block mb-2 text-[#8d5c51]">Available Colors</label>
+      <label className="font-semibold block mb-2 text-[#D4AF37]">Available Colors</label>
       <input
         type="text"
         placeholder="Enter colors (comma separated)"
         value={formData.availableColors.join(', ')}
         onChange={handleChange}
-        className="p-2 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+        className="p-2 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
       />
     </div>
-    <div>
+    {/* <div>
       <label className="font-semibold block mb-2 text-[#8d5c51]">Available Sizes</label>
       <input
         type="text"
@@ -189,18 +189,18 @@ const EditProduct = () => {
         onChange={handleChange}
         className="p-2 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
       />
-    </div>
+    </div> */}
   </div>
 
         {/* Size Chart Input */}
 <div className="mt-4">
-  <h3 className="text-[#8d5c51] font-semibold">Size Chart</h3>
+  <h3 className="text-[#D4AF37] font-semibold">Size Chart</h3>
   <input
     type="text"
     name="sizeChart"
     value={formData.sizeChart}
     onChange={handleChange}
-    className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+    className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
     placeholder="Size Chart URL"
   />
 </div>
@@ -208,7 +208,7 @@ const EditProduct = () => {
 
         {/* Dynamic Image Fields */}
         <div className="mt-4">
-          <h3 className="text-[#8d5c51] font-semibold">Images</h3>
+          <h3 className="text-[#D4AF37] font-semibold">Images</h3>
           {formData.images.map((image, index) => (
             <div key={index} className="flex gap-4 items-center mb-4">
               <input
@@ -220,12 +220,12 @@ const EditProduct = () => {
                   updatedImages[index] = e.target.value;
                   setFormData({ ...formData, images: updatedImages });
                 }}
-                className="p-3 border rounded-lg w-full text-[#7b7c4d] bg-[#faeed5] placeholder:text-[#7b7c4d] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
+                className="p-3 border rounded-lg w-full text-[#D2C385] bg-[#FFF8E7] placeholder:text-[#D2C385] focus:outline-none focus:ring-2 focus:ring-[#a0926c]"
                 placeholder={`Image URL ${index + 1}`}
               />
               <button
                 type="button"
-                className="bg-[#a0926c] text-white px-3 py-2 rounded-lg"
+                className="bg-[#D4AF37] text-white px-3 py-2 rounded-lg"
                 onClick={() => {
                   const updatedImages = formData.images.filter((_, i) => i !== index);
                   setFormData({ ...formData, images: updatedImages });
@@ -237,7 +237,7 @@ const EditProduct = () => {
           ))}
           <button
             type="button"
-            className="bg-[#8d5c51] text-white px-4 py-2 rounded-lg mt-4"
+            className="bg-[#D4AF37] text-white px-4 py-2 rounded-lg mt-4"
             onClick={() => {
               if (formData.images.length < 5) {
                 setFormData({ ...formData, images: [...formData.images, ''] });
@@ -252,7 +252,7 @@ const EditProduct = () => {
 
         <button
           type="submit"
-          className="bg-[#8d5c51] text-white px-4 py-2 rounded-lg mt-6 w-full"
+          className="bg-[#D4AF37] text-white px-4 py-2 rounded-lg mt-6 w-full"
         >
           Save Changes
         </button>

@@ -307,8 +307,8 @@ const toggleReviewModal = () => setReviewModalOpen((prev) => !prev);
                     key={sizeObj.size}
                     className={`px-4 py-2 border rounded-lg text-sm transition-all ${
                       selectedSize === sizeObj.size
-                        ? "bg-indigo-600 text-white"
-                        : "bg-gray-100 text-gray-700"
+                        ? "bg-[#D4AF37] text-white"
+                        : "bg-[#D2C385] text-white"
                     }`}
                     onClick={() => handleSizeSelection(sizeObj.size)}
                     whileHover={{ scale: 1.1 }}
@@ -362,7 +362,7 @@ const toggleReviewModal = () => setReviewModalOpen((prev) => !prev);
 
             <motion.button
               onClick={() => addToCart(product)}
-              className="w-full py-4 bg-[ #D4AF37] text-white text-lg font-bold rounded-xl mt-6 hover:bg-[ #D2C385] transition-all"
+              className="w-full py-4 bg-[#D4AF37] text-white text-lg font-bold rounded-xl mt-6 hover:bg-[#D2C385] transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

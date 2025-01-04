@@ -5,12 +5,12 @@ import 'slick-carousel/slick/slick-theme.css';
 import decstop1 from '/Banner/Decs1.jpg'
 import decstop2 from '/Banner/Decs2.jpg'
 import decstop3 from '/Banner/Decs3.jpg'
-import decstop4 from '/Banner/Decs4.png'
+import decstop4 from '/Banner/Decs4.jpg'
 
-import mob1 from '/Banner/Mob1.jpg'
-import mob2 from '/Banner/Mob2.jpg'
-import mob3 from '/Banner/Mob3.jpg'
-import mob4 from '/Banner/Mob4.jpg'
+import mob1 from '/Banner/Decs1.jpg'
+import mob2 from '/Banner/Decs2.jpg'
+import mob3 from '/Banner/Decs3.jpg'
+import mob4 from '/Banner/Decs4.jpg'
 
 
 const HomeBanner = () => {
